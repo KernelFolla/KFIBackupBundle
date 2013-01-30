@@ -1,0 +1,20 @@
+{
+    "name": "kfi/backup-bundle",
+    "description": "bundle for backup features - under development",
+    "keywords": ["backup"],
+    "type": "symfony-bundle",
+    "license": "Apache",
+    "authors": [
+        {
+            "name": "Marino Di Clemente",
+            "email": "marino@kfinformatica.it"
+        }
+    ],
+    "require": {
+        "symfony/framework-bundle": "2.*"
+    },
+    "autoload": {
+        "psr-0": { "KFI\\BackupBundle": "" }
+    },
+    "target-dir": "KFI/BackupBundle"
+}

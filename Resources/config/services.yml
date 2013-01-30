@@ -1,0 +1,7 @@
+parameters:
+#    kfi_backup.example.class: KFI\BackupBundle\Example
+
+services:
+#    kfi_backup.example:
+#        class: %kfi_backup.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
