@@ -24,7 +24,7 @@ abstract class Base extends ContainerAwareCommand
     protected $input;
     /** @var OutputInterface */
     protected $output;
-    protected $directory;
+    protected $directory = self::DEFAULT_BASEDIR;
 
     /**
      * {@inheritDoc}
@@ -33,7 +33,6 @@ abstract class Base extends ContainerAwareCommand
     {
         $this->input   = $input;
         $this->output  = $output;
-        $this->directory = self::DEFAULT_BASEDIR;
         $this->init();
         $this->dispatch();
     }
