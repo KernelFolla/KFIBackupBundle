@@ -54,6 +54,7 @@ abstract class Base extends ContainerAwareCommand
     protected function executeCode($command, $hideCommandLine = null)
     {
         $process = new Process($command);
+        $process->setTimeout(10800);
         $process->run();
         if (!$process->isSuccessful()) {
             throw $this->createProcessException($process, $hideCommandLine);
